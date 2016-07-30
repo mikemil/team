@@ -14,8 +14,8 @@
       })
       .when('/home', {
         templateUrl: 'app/main/home.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+        controller: 'HomeController',
+        controllerAs: 'home'
       })
       .when('/about', {
         templateUrl: 'app/main/about.html',

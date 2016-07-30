@@ -1,6 +1,11 @@
 Done - list group - change panel-heading color to the red in the nav-bar
 
 Create controllers for each pages
+* home
+* about
+* calendar
+* contact
+
 Figure out content for other pages
 Stub out data content with json-server
 use $http to get the content for the pages
