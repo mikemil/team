@@ -1,0 +1,16 @@
+Done - list group - change panel-heading color to the red in the nav-bar
+
+Create controllers for each pages
+Figure out content for other pages
+Stub out data content with json-server
+use $http to get the content for the pages
+
+
+
+Calendar options
+**************************************************************************
+http://www.angularjs4u.com/calendar/5-angularjs-calendars-examples/
+
+https://angular-ui.github.io/ui-calendar/
+
+https://github.com/500tech/angular-simple-calendar

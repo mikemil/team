@@ -25,3 +25,6 @@
 .navbar-custom .icon-bar {
   	background-color:#e74c3c;
 }
+.list-group-item:first-child {
+		background-color: #e74c3c;
+}

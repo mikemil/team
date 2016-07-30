@@ -32,6 +32,11 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
+       .when('/calendar', {
+        templateUrl: 'app/main/calendar.html',
+        controller: 'MainController',
+        controllerAs: 'main'
+      })
       .otherwise({
         redirectTo: '/'
       });
