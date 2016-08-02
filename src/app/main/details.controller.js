@@ -3,21 +3,24 @@
 
   angular
     .module('team')
-    .controller('HomeController', HomeController);
+    .controller('DetailsController',  DetailsController);
 
   /** @ngInject */
-  function HomeController($scope) {
-    var home = this;
+  function DetailsController($scope, $routeParams) {
+    var details = this;
 
-    home.selectedMember = null;
+    // details.selectedMember = $routeParams.id;
+    // currently using as index not the id - until we lookup the members
+    // using the GET request - so minus 1 to get index
+    details.selectedMember = $routeParams.id - 1;
 
-    home.setSelectedMember = function (id) {
-        console.log('setting selectedMember='+id);
-        home.selectedMember = id;
-        console.log('selectedMember='+home.selectedMember);
-    }
+    // details.setSelectedMember = function (id) {
+    //     console.log('setting selectedMember='+id);
+    //     details.selectedMember = id;
+    //     console.log('selectedMember='+details.selectedMember);
+    // }
    
-    home.members = [
+    details.members = [
         {
            "id": 1,
            "firstName": "Elena",

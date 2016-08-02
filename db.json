@@ -1,23 +1,5 @@
-(function() {
-  'use strict';
-
-  angular
-    .module('team')
-    .controller('HomeController', HomeController);
-
-  /** @ngInject */
-  function HomeController($scope) {
-    var home = this;
-
-    home.selectedMember = null;
-
-    home.setSelectedMember = function (id) {
-        console.log('setting selectedMember='+id);
-        home.selectedMember = id;
-        console.log('selectedMember='+home.selectedMember);
-    }
-   
-    home.members = [
+{
+ "members" :  [
         {
            "id": 1,
            "firstName": "Elena",
@@ -113,7 +95,4 @@
         }
         
     ]
-
-  }
-
-})();
+}

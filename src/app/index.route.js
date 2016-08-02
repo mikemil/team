@@ -27,10 +27,10 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .when('/details', {
+      .when('/details/:id', {
         templateUrl: 'app/main/details.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+        controller: 'HomeController',
+        controllerAs: 'home'
       })
        .when('/calendar', {
         templateUrl: 'app/main/calendar.html',

@@ -1,38 +1,39 @@
-<div class="container" ng-controller="HomeController">
+<!--<div class="container" ng-controller="HomeController" ng-init="home.selectedMember=0">-->
+<div class="container" ng-controller="DetailsController as details">
 
 	<div class="panel panel-default">
 		<div class="panel-heading">Personal Information</div>
   			<div class="panel-body">
   				<div class="row">
   					<div class="col-md-4">
-    					<label>First Name:</label>{{home.members[home.selectedMember].firstName}}selectedMember={{home.members}}
+    					<label>First Name:</label>{{details.members[details.selectedMember].firstName}} 
     				</div>	
     				<div class="col-md-4">
-    					<label>Last Name:</label>{{home.members[home.selectedMember].lastName}}
+    					<label>Last Name:</label>{{details.members[details.selectedMember].lastName}}
     				</div>
     				<div class="col-md-4">
-    					<label>DOB:</label>{{home.members[home.selectedMember].dob}}
+    					<label>DOB:</label>{{details.members[details.selectedMember].dob}}
     				</div>
     			</div>
     			<div class="row">
     				<div class="col-md-6">
-    					<label>Address Line 1:</label>{{home.members[home.selectedMember].addressLine1}}
+    					<label>Address Line 1:</label>{{details.members[details.selectedMember].addressLine1}}
     				</div>
     			</div>
     			<div class="row">
     				<div class="col-md-6">
-    					<label>Address Line 2:</label>{{home.members[home.selectedMember].addressLine2}}
+    					<label>Address Line 2:</label>{{details.members[details.selectedMember].addressLine2}}
 					</div>
     			</div>
     			<div class="row">
     				<div class="col-md-4">
-    					<label>City:</label>{{home.members[home.selectedMember].city}}
+    					<label>City:</label>{{details.members[details.selectedMember].city}}
     				</div>
     				<div class="col-md-4">
-    					<label>State:</label>{{home.members[home.selectedMember].state}}
+    					<label>State:</label>{{details.members[details.selectedMember].state}}
     				</div>
     				<div class="col-md-4">
-    					<label>Zip:</label>{{home.members[home.selectedMember].zip}}
+    					<label>Zip:</label>{{details.members[details.selectedMember].zip}}
 					</div>
     			</div>
   			</div>
@@ -51,58 +52,5 @@
  		</div>
 	</div>
 
-   <!--	<h2>Elena Miller</h2>
-
-	<div class="panel panel-default">
-		<div class="panel-heading">Personal Information</div>
-  			<div class="panel-body">
-  				<div class="row">
-  					<div class="col-md-4">
-    					<label>First Name:</label>Elena
-    				</div>	
-    				<div class="col-md-4">
-    					<label>Last Name:</label>Miller
-    				</div>
-    				<div class="col-md-4">
-    					<label>DOB:</label>10/5/2007
-    				</div>
-    			</div>
-    			<div class="row">
-    				<div class="col-md-6">
-    					<label>Address Line 1:</label>2713 River Bend Trail
-    				</div>
-    			</div>
-    			<div class="row">
-    				<div class="col-md-6">
-    					<label>Address Line 2:</label>
-					</div>
-    			</div>
-    			<div class="row">
-    				<div class="col-md-4">
-    					<label>City:</label>Flower Mound
-    				</div>
-    				<div class="col-md-4">
-    					<label>State:</label>Texas
-    				</div>
-    				<div class="col-md-4">
-    					<label>Zip:</label>75022
-					</div>
-    			</div>
-  			</div>
-		</div>
-
-
-		<div class="panel panel-default">
-  			<div class="panel-heading">
-    			<h3 class="panel-title">Accompolishments</h3>
-  			</div>
-  		<div class="panel-body">
-    		<ul class="list-group">
-				<li class="list-group-item">TAF Level 4 1st All-Around, Best Gymnastics Meet</li>
-				<li class="list-group-item">TAF Level 4 6th All-Around, State Meeting</li>
-				<li class="list-group-item">TAF Level 4 1st Place Balance Beam, 9.70 score</li>
-			</ul>
- 		</div>
-	</div>-->
-
+   
 </div>
