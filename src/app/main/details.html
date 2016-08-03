@@ -45,9 +45,12 @@
   			</div>
   		<div class="panel-body">
     		<ul class="list-group">
-				<li class="list-group-item">TAF Level 4 1st All-Around, Best Gymnastics Meet</li>
+
+				<li class="list-group-item" ng-repeat="accompolishment in details.members[details.selectedMember].accompolishments">
+    {{accompolishment.description}}</li>
+				<!--<li class="list-group-item">TAF Level 4 1st All-Around, Best Gymnastics Meet</li>
 				<li class="list-group-item">TAF Level 4 6th All-Around, State Meeting</li>
-				<li class="list-group-item">TAF Level 4 1st Place Balance Beam, 9.70 score</li>
+				<li class="list-group-item">TAF Level 4 1st Place Balance Beam, 9.70 score</li>-->
 			</ul>
  		</div>
 	</div>

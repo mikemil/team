@@ -15,7 +15,10 @@
     text-decoration: none;
     background-color: #cc2b19;
 }
-      
+
+.navbar-default {
+	 background-color: #cc2b19;	
+}	      
 .navbar-custom .navbar-brand {
   	color:#eeeeee;
 }
