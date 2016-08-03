@@ -19,13 +19,13 @@
       })
       .when('/about', {
         templateUrl: 'app/main/about.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+        controller: 'AboutController',
+        controllerAs: 'about'
       })
       .when('/contact', {
         templateUrl: 'app/main/contact.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+        controller: 'ContactController',
+        controllerAs: 'contact'
       })
       .when('/details/:id', {
         templateUrl: 'app/main/details.html',

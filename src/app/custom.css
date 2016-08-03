@@ -28,3 +28,6 @@
 .list-group-item:first-child {
 		background-color: #e74c3c;
 }
+.list-group-item.active:hover {
+		background-color: #cc2b19;
+}

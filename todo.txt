@@ -1,5 +1,10 @@
 Done - list group - change panel-heading color to the red in the nav-bar
 
+
+
+TODO
+**********************************************************************************************************8
+
 Add 'accompolishments array to the member data - and add to the db.json file used by json-server
 
 Create controllers for each pages
@@ -8,7 +13,6 @@ Create controllers for each pages
 * about
 * calendar
 * contact
-* use 'controller as syntax' for all controllers
 
 fix the colors on the details page - firstChild is wrong for 2nd panel on the page
 use $http to get the content for the pages
