@@ -6,8 +6,14 @@
     .controller('HomeController', HomeController);
 
   /** @ngInject */
-  function HomeController($scope) {
+  function HomeController($scope, homeService) {
     var home = this;
+
+    home.members = null;
+
+    homeService.getMembers().then(function (dataResponse) {
+      home.members = dataResponse;
+    })
 
     home.selectedMember = null;
 
@@ -17,7 +23,7 @@
         console.log('selectedMember='+home.selectedMember);
     }
    
-    home.members = [
+    home.membersHide = [
         {
            "id": 1,
            "firstName": "Elena",
