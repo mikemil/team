@@ -29,8 +29,8 @@
       })
       .when('/details/:id', {
         templateUrl: 'app/main/details.html',
-        controller: 'HomeController',
-        controllerAs: 'home'
+        controller: 'DetailsController',
+        controllerAs: 'details'
       })
        .when('/calendar', {
         templateUrl: 'app/main/calendar.html',
