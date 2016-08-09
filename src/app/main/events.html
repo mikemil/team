@@ -1,0 +1,15 @@
+<div class="container">
+
+  <div ng-controller="EventsController">
+
+    <h2>Events</h2>
+
+    <div class="list-group">
+
+      <a class="list-group-item active">WOGA Level 4 Team Schedule/Events</a>
+
+      <a class="list-group-item"  ng-href="#events" ng-repeat="event in events.events.data">{{event.name}}</a>
+
+    </div>
+  </div>
+</div>

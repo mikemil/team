@@ -37,6 +37,11 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
+      .when('/events', {
+        templateUrl: 'app/main/events.html',
+        controller: 'EventsController',
+        controllerAs: 'events'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -94,5 +94,15 @@
            "dob": "11/25/2008"
         }
         
-    ]
+    ],
+  "events" :  [
+        {
+           "id": 1,
+           "name": "WOGA Classic",
+           "description":  "WOGA meet",
+           "startDateTs" : "2016-80-29",
+           "endDateTs" : "2016-08-30"
+        }
+      ]
+
 }
