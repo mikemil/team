@@ -6,7 +6,7 @@ angular.module('team').service('homeService', function ($http) {
 
    svc.getMembers = function() {
      //console.log('in the svc.getMembers function...');
-     return $http( { method: 'GET', url: 'http://localhost:3000/members' }  );
+     return $http( { method: 'GET', url: 'http://localhost:5000/members' }  );
    }
 
 

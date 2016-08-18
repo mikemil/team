@@ -5,7 +5,7 @@ angular.module('team').service('eventsService', function ($http) {
    var svc = this;
 
    svc.getEvents = function() {
-     return $http( { method: 'GET', url: 'http://localhost:3000/events' }  );
+     return $http( { method: 'GET', url: 'http://localhost:5000/events' }  );
    }
 
 
