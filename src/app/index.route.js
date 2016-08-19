@@ -34,8 +34,8 @@
       })
        .when('/calendar', {
         templateUrl: 'app/main/calendar.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+        controller: 'CalendarController',
+        controllerAs: 'calendar'
       })
       .when('/events', {
         templateUrl: 'app/main/events.html',

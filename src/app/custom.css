@@ -37,3 +37,22 @@
 .panel-default > .panel-heading {
 	background-color: #e74c3c;
 }
+simple-calendar .week {
+    height: 60px;
+}
+
+simple-calendar .weekday { text-align: center; }
+
+simple-calendar  .weekday, .day {
+    display: inline-block;
+    width: calc(100% / 7);
+}
+
+simple-calendar .day {
+    height: 60px;
+    padding: 2px;
+    border: 1px solid #dddddd;
+    border-bottom: none;
+    border-left: none;
+    overflow: hidden;
+}
