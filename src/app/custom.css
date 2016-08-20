@@ -31,7 +31,13 @@
 /*.list-group-item:first-child {
 		background-color: #e74c3c;
 }*/
-.list-group-item.active:hover {
+/*.list-group-item:first-child {
+		background-color: #e74c3c;
+}*/
+.list-group-item.active   {
+		background-color: #cc2b19;
+}
+.list-group-item.active:hover   {
 		background-color: #cc2b19;
 }
 .panel-default > .panel-heading {
