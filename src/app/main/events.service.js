@@ -1,11 +1,11 @@
 (function() {
   'use strict';
 
-angular.module('team').service('eventsService', function ($http) {
+angular.module('team').service('eventsService', ['$http', 'restConfig', function ($http, restConfig) {
    var svc = this;
 
    svc.getEvents = function() {
-     return $http( { method: 'GET', url: 'http://localhost:5000/events' }  );
+    return $http( { method: 'GET', url: restConfig.url+':'+restConfig.port+'/events' }  );
    }
 
 
@@ -14,6 +14,6 @@ angular.module('team').service('eventsService', function ($http) {
 //        that will be called by the details controller but 
 //        still in this service!
 
-});
+}]);
 
 })();

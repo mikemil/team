@@ -11,6 +11,7 @@ Done - Stub out data content with json-server (members with details)
 
 TODO 
 **********************************************************************************************************8
+.constant for the url for rest service - use url and port
 
 Create controllers for each pages
 * details -  add service call to use $http with request parameter id
