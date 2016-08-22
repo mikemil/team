@@ -8,26 +8,34 @@ Done - create details controller
 Done - fix the colors on the details page - firstChild is wrong for 2nd panel on the page
 Done - Stub out data content with json-server (members with details)
 
+Done -  calendar controller
+Done -  .constant for the url for rest service - use url and port
 
 TODO 
 **********************************************************************************************************8
-.constant for the url for rest service - use url and port
+
+Combine Calendar and Events page - to use the calendar  
+    then need to get the events from the eventSvc not hard-coded
+
+Click on a date in the calendar w/o an event - default to Add event
+  which will prompt for the title, etc - and call eventSvc to create a new event    
 
 Create controllers for each pages
 * details -  add service call to use $http with request parameter id
-* calendar
 * about  - should be minor - not much on that page
 * contact - should be minor - not mucn on that page either
+
+
 
 use $http to get the content for the pages
 Figure out content for other pages
 
+List of teams - even if only 1 right now
 
+Then combine events / teams - to get results for each team member 
+   need to think about the data model so that I can show the results
+   from a previous meet. Which includes getting to results from the Team member list.
 
-Calendar options
-**************************************************************************
-http://www.angularjs4u.com/calendar/5-angularjs-calendars-examples/
+   Results need to capture a viarable number of exercises, generally bean, bars, floor and vault
+   but need to handle cases where they only do a couple exercises.  
 
-https://angular-ui.github.io/ui-calendar/
-
-https://github.com/500tech/angular-simple-calendar

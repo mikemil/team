@@ -74,7 +74,7 @@
         },
          {
               "id": 8,
-           "firstName": "Sofia",
+           "firstName": "Nastia",
            "lastName":  "Liukin",
            "addressLine1": "1 Main Street",
            "addressLine2": "Protege Suite",
@@ -98,7 +98,7 @@
   "events" :  [
         {
            "id": 1,
-           "name": "WOGA Classic",
+           "name": "Golden Grips Classic",
            "description":  "WOGA meet",
            "startDateTs" : "2016-80-29",
            "endDateTs" : "2016-08-30"
