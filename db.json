@@ -1,108 +1,174 @@
 {
- "members" :  [
-        {
-           "id": 1,
-           "firstName": "Elena",
-           "lastName":  "Miller",
-           "addressLine1": "2713 River Bend Trail",
-           "city": "Flower Mound",
-           "state": "Texas",
-           "zip": "75022",
-           "dob": "10/05/2007"
-        },
-         {
-           "id": 2,
-           "firstName": "Gracie",
-           "lastName":  "Smith",
-           "addressLine1": "7809 Independence Parkway",
-           "city": "Plano",
-           "state": "Texas",
-           "zip": "75067",
-           "dob": "08/19/2007"
-        },
-         {
-             "id": 3,
-           "firstName": "Brinley",
-           "lastName":  "Whats-her-name",
-           "addressLine1": "3011 Plano Parkway",
-           "city": "Plano",
-           "state": "Texas",
-           "zip": "75066",
-           "dob": "12/12/2008"
-        },
-         {
-              "id": 4,
-           "firstName": "Madison",
-           "lastName":  "Kocian",
-           "addressLine1": "4567 Strait Lane",
-           "city": "Dallas",
-           "state": "Texas",
-           "zip": "75211",
-           "dob": "09/30/2001"
-        },
-         {
-              "id": 5,
-           "firstName": "Gabby",
-           "lastName":  "Douglas",
-           "addressLine1": "8713 Santo Domingo Way",
-           "addressLine2": "Suite 999",
-           "city": "Santa Clara",
-           "state": "California",
-           "zip": "12033",
-           "dob": "03/08/2001"
-        },
-         {
-              "id": 6,
-           "firstName": "Aly",
-           "lastName":  "Raisman",
-           "addressLine1": "23 Bunker Hill Road",
-           "addressLine2": "Apt 101",
-           "city": "Boston",
-           "state": "Massachusetts",
-           "zip": "65908",
-           "dob": "02/02/2001"
-        },
-         {
-              "id": 7,
-           "firstName": "Simone",
-           "lastName":  "Biles",
-           "addressLine1": "1 Ranch Way",
-           "city": "Spring",
-           "state": "Texas",
-           "zip": "76099",
-           "dob": "01/01/2001"
-        },
-         {
-              "id": 8,
-           "firstName": "Nastia",
-           "lastName":  "Liukin",
-           "addressLine1": "1 Main Street",
-           "addressLine2": "Protege Suite",
-           "city": "Plano",
-           "state": "Texas",
-           "zip": "75024",
-           "dob": "06/11/2008"
-        },
-         {
-              "id": 9,
-           "firstName": "Jaylee",
-           "lastName":  "Down",
-           "addressLine1": "713 Teacher Lane",
-           "city": "Highland Village",
-           "state": "Texas",
-           "zip": "75088",
-           "dob": "11/25/2008"
-        }
-        
-    ],
-  "events" :  [
-        {
-           "id": 1,
-           "name": "Golden Grips Classic",
-           "description":  "WOGA meet",
-           "startDateTs" : "2016-80-29",
-           "endDateTs" : "2016-08-30"
-        }
-      ]
-
+  "members": [
+    {
+      "id": 1,
+      "firstName": "Elena",
+      "lastName": "Miller",
+      "addressLine1": "2713 River Bend Trail",
+      "city": "Flower Mound",
+      "state": "Texas",
+      "zip": "75022",
+      "dob": "10/05/2007"
+    },
+    {
+      "id": 2,
+      "firstName": "Gracie",
+      "lastName": "Smith",
+      "addressLine1": "7809 Independence Parkway",
+      "city": "Plano",
+      "state": "Texas",
+      "zip": "75067",
+      "dob": "08/19/2007"
+    },
+    {
+      "id": 3,
+      "firstName": "Brinley",
+      "lastName": "Whats-her-name",
+      "addressLine1": "3011 Plano Parkway",
+      "city": "Plano",
+      "state": "Texas",
+      "zip": "75066",
+      "dob": "12/12/2008"
+    },
+    {
+      "id": 4,
+      "firstName": "Madison",
+      "lastName": "Kocian",
+      "addressLine1": "4567 Strait Lane",
+      "city": "Dallas",
+      "state": "Texas",
+      "zip": "75211",
+      "dob": "09/30/2001"
+    },
+    {
+      "id": 5,
+      "firstName": "Gabby",
+      "lastName": "Douglas",
+      "addressLine1": "8713 Santo Domingo Way",
+      "addressLine2": "Suite 999",
+      "city": "Santa Clara",
+      "state": "California",
+      "zip": "12033",
+      "dob": "03/08/2001"
+    },
+    {
+      "id": 6,
+      "firstName": "Aly",
+      "lastName": "Raisman",
+      "addressLine1": "23 Bunker Hill Road",
+      "addressLine2": "Apt 101",
+      "city": "Boston",
+      "state": "Massachusetts",
+      "zip": "65908",
+      "dob": "02/02/2001"
+    },
+    {
+      "id": 7,
+      "firstName": "Simone",
+      "lastName": "Biles",
+      "addressLine1": "1 Ranch Way",
+      "city": "Spring",
+      "state": "Texas",
+      "zip": "76099",
+      "dob": "01/01/2001"
+    },
+    {
+      "id": 8,
+      "firstName": "Nastia",
+      "lastName": "Liukin",
+      "addressLine1": "1 Main Street",
+      "addressLine2": "Protege Suite",
+      "city": "Plano",
+      "state": "Texas",
+      "zip": "75024",
+      "dob": "06/11/2008"
+    },
+    {
+      "id": 9,
+      "firstName": "Jaylee",
+      "lastName": "Down",
+      "addressLine1": "713 Teacher Lane",
+      "city": "Highland Village",
+      "state": "Texas",
+      "zip": "75088",
+      "dob": "11/25/2008"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Golden Grips Classic",
+      "date": "2016-08-26"
+    },
+    {
+      "title": "Best Gymnastics Invite",
+      "date": "2016-08-27",
+      "id": 4
+    },
+    {
+      "title": "Denton Gymnastics Invite",
+      "date": "2016-08-28",
+      "id": 5
+    },
+    {
+      "title": "Texas Dreams Qualifier",
+      "date": "2016-08-29",
+      "id": 6
+    },
+    {
+      "title": "Practice 4p-7p",
+      "date": "2016-08-30",
+      "id": 7
+    },
+    {
+      "title": "Practice 4p-7p",
+      "date": "2016-08-31",
+      "id": 8
+    },
+    {
+      "title": "Practice 4p-7p",
+      "date": "2016-09-01",
+      "id": 9
+    },
+    {
+      "title": "Practice 4p-7p",
+      "date": "2016-09-02",
+      "id": 10
+    },
+    {
+      "title": "Practice 4p-7p",
+      "date": "2016-09-03",
+      "id": 11
+    },
+    {
+      "title": "Practice 4p-7p",
+      "date": "2016-09-04",
+      "id": 12
+    },
+    {
+      "title": "Practice 4p-7p",
+      "date": "2016-09-05",
+      "id": 13
+    },
+    {
+      "title": "Practice 4p-7p",
+      "date": "2016-09-06",
+      "id": 14
+    },
+    {
+      "title": "Practice 4p-7p",
+      "date": "2016-09-07",
+      "id": 15
+    },
+    {
+      "title": "Practice 4p-7p",
+      "date": "2016-09-08",
+      "id": 16
+    },
+    {
+      "title": "Practice 4p-7p",
+      "date": "2016-09-20",
+      "id": 17
+    }
+  ]
 }

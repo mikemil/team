@@ -5,14 +5,11 @@ angular.module('team').service('eventsService', ['$http', 'restConfig', function
    var svc = this;
 
    svc.getEvents = function() {
+     console.log('getting events...');
     return $http( { method: 'GET', url: restConfig.url+':'+restConfig.port+'/events' }  );
    }
 
-
-// TODO - add a new method that takes the id and gets
-//        a single member based on the id
-//        that will be called by the details controller but 
-//        still in this service!
+//TODO need to add function for POST - to create new Event
 
 }]);
 

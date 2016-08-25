@@ -37,11 +37,6 @@
         controller: 'CalendarController',
         controllerAs: 'calendar'
       })
-      .when('/events', {
-        templateUrl: 'app/main/events.html',
-        controller: 'EventsController',
-        controllerAs: 'events'
-      })
       .otherwise({
         redirectTo: '/'
       });
