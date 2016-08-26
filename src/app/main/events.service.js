@@ -10,6 +10,12 @@ angular.module('team').service('eventsService', ['$http', 'restConfig', function
    }
 
 //TODO need to add function for POST - to create new Event
+  svc.create = function(evt) {
+    console.log('creating event:'+evt.title+' for date: '+evt.date);
+    return $http.post(restConfig.url+':'+restConfig.port+'/events', evt  );
+    // return $http( { method: 'POST', url: restConfig.url+':'+restConfig.port+'/events' }, evt  );
+  }
+
 
 }]);
 

@@ -11,17 +11,17 @@ Done - Stub out data content with json-server (members with details)
 Done -  calendar controller
 Done -  .constant for the url for rest service - use url and port
 
+Done - Combine Calendar and Events page - to use the calendar  
+       then need to get the events from the eventSvc not hard-coded
+
+Done - Click on date without an event - defaults to add event  - prompt Done
+  but now need to create the post (or put) rest method to add events
+
 TODO 
 **********************************************************************************************************8
 
-Combine Calendar and Events page - to use the calendar  
-    then need to get the events from the eventSvc not hard-coded
+Fix create of event - to add to the current calendar - currently have to refresh to see new event
 
-Click on date without an event - defaults to add event  - prompt Done
-  but now need to create the post (or put) rest method to add events
-
-Click on a date in the calendar w/o an event - default to Add event
-  which will prompt for the title, etc - and call eventSvc to create a new event    
 
 Create controllers for each pages
 * details -  add service call to use $http with request parameter id

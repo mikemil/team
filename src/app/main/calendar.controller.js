@@ -12,8 +12,13 @@
         var evt = prompt("Enter event name", "");
     
         if (evt != null) {
-           var evtDt = new Date([date.year, date.month, date.day]);
+           var evtDt = new Date([date.year, date.month+1, date.day]);
            console.log('Add event: '+evt+ ' on date: '+ evtDt);
+
+           var event = { title: evt, date: evtDt};
+           eventsService.create(event).then(function (dataResponse) {
+              console.log('create dataResponse: '+dataResponse);
+           })
         }
     }
 
