@@ -18,6 +18,7 @@
            var event = { title: evt, date: evtDt};
            eventsService.create(event).then(function (dataResponse) {
               console.log('create dataResponse: '+dataResponse);
+              $scope.events.push(event);
            })
         }
     }

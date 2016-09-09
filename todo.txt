@@ -15,20 +15,26 @@ Done - Combine Calendar and Events page - to use the calendar
        then need to get the events from the eventSvc not hard-coded
 
 Done - Click on date without an event - defaults to add event  - prompt Done
-  but now need to create the post (or put) rest method to add events
+       but now need to create the post (or put) rest method to add events
 
+Done - Fix create of event - to add to the current calendar - currently have to refresh to see new event
+
+**********************************************************************************************************
 TODO 
-**********************************************************************************************************8
+**********************************************************************************************************
 
-Fix create of event - to add to the current calendar - currently have to refresh to see new event
-
+Start looking at how to implement security
+  * allow creation of team member, if create privileges
+  * allow creation of event on the calendar if calendar-add privileges
 
 Create controllers for each pages
 * details -  add service call to use $http with request parameter id
 * about  - should be minor - not much on that page
 * contact - should be minor - not mucn on that page either
 
-Figure out content for other pages
+May want to update the event service to take the month for the calendar 
+  and then the service should only get events for that month.
+  Currently looks like it is getting ALL events and filtering them out
 
 List of teams - even if only 1 right now - rather than only 1 team
 
