@@ -22,6 +22,8 @@ Done - Fix create of event - to add to the current calendar - currently have to 
 **********************************************************************************************************
 TODO 
 **********************************************************************************************************
+Try adding a small X i in the corner of any calendar entry 
+  - make it clickable and that X means to delete the calendar entry
 
 Start looking at how to implement security
   * allow creation of team member, if create privileges

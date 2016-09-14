@@ -30,7 +30,8 @@
     }
     
     $scope.calendarOptions = {
-        defaultDate: "2016-08-19",
+        //defaultDate: "2016-08-19",
+        defaultDate : new Date().toISOString().substring(0, 10),
         minDate: new Date(),
         maxDate: new Date(2017, 11, 31),
         dayNamesLength: 3, // How to display weekdays (1 for "M", 2 for "Mo", 3 for "Mon"; 9 will show full day names; default is 1)

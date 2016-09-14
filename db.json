@@ -1,4 +1,12 @@
 {
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" },
+
   "members": [
     {
       "id": 1,
@@ -171,24 +179,6 @@
       "id": 17
     },
     {
-      "id": 18
-    },
-    {
-      "id": 19
-    },
-    {
-      "id": 20
-    },
-    {
-      "id": 21
-    },
-    {
-      "id": 22
-    },
-    {
-      "id": 23
-    },
-    {
       "title": "test10",
       "date": "2016-09-10T05:00:00.000Z",
       "id": 24
@@ -257,6 +247,54 @@
       "title": "North Texas State meet levels 3-5",
       "date": "2016-10-02T05:00:00.000Z",
       "id": 37
+    }
+  ],
+  "scores" : [
+    {
+      "id" : 24,
+      "name" : "Woga Classic",
+       "members" : [
+         {
+          "id" : 1,
+          "bars" : 8.8, 
+          "beam" : 8.825, 
+          "floor" : 9.725, 
+          "vault" : 9.025 
+         },
+         {
+          "id" : 2,
+          "bars" : 2.8, 
+          "beam" : 2.825, 
+          "floor" : 2.725, 
+          "vault" : 2.025 
+         },
+         {
+          "id" : 3,
+          "bars" : 3.8, 
+          "beam" : 3.825, 
+          "floor" : 3.725, 
+          "vault" : 3.025 
+         },
+         {
+          "id" : 24,
+          "bars" : 1.8, 
+          "beam" : 1.825, 
+          "floor" : 1.725, 
+          "vault" : 1.025 
+         }
+       ]
+    },
+    {
+      "id" : 37,
+       "members" : [
+         {
+          "id" : 1,
+          "bars" : 9.350, 
+          "beam" : 9.825, 
+          "floor" : 9.725, 
+          "vault" : 9.025 
+         }
+       ]
     }
   ]
 }
