@@ -18,12 +18,15 @@ Done - Click on date without an event - defaults to add event  - prompt Done
        but now need to create the post (or put) rest method to add events
 
 Done - Fix create of event - to add to the current calendar - currently have to refresh to see new event
-
+Done - Made current date the defaultDate for the calendar
 **********************************************************************************************************
 TODO 
 **********************************************************************************************************
+Create form to allow add/edit of team members
+
 Try adding a small X i in the corner of any calendar entry 
-  - make it clickable and that X means to delete the calendar entry
+  - make it clickable and that X means to delete the calendar entry or some other way of deleting entries
+    assuming you have the privileges
 
 Start looking at how to implement security
   * allow creation of team member, if create privileges
