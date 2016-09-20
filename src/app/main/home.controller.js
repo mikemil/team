@@ -8,7 +8,7 @@
   /** @ngInject */
   function HomeController($scope, homeService) {
     var home = this;
-
+    home.showAddForm = false;
     home.members = null;
 
     homeService.getMembers().then(function (dataResponse) {
