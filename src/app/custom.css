@@ -62,3 +62,7 @@ simple-calendar .day {
     border-left: none;
     overflow: hidden;
 }
+.error {
+  color: red;
+  padding-bottom: 10px;
+}

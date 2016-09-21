@@ -14,22 +14,27 @@
 
   <!-- form to add member -->
   <div ng-show="showAddForm">
-    <form name="myform" novalidate>
+    <form name="myform" ng-submit="submit()" novalidate>
       <div class="form-group row">
         <label for="firstname" class="col-xs-2 col-form-label">First Name</label>
         <div class="col-xs-10">
-          <input class="form-control" type="text" id="firstname" ng-required="firstname">
+          <input class="form-control" ng-model="member.firstname" type="text" id="firstname" ng-required="firstname">
         </div>
+        <p class="error validationerror" ng-show="myform.firstname.$invalid && myform.firstname.$touched">
+          First name required</p>
       </div>
       <div class="form-group row">
         <label for="lastname" class="col-xs-2 col-form-label">Last Name</label>
         <div class="col-xs-10">
-          <input class="form-control" type="text" id="lastname" ng-required="lastname">
+          <input class="form-control" ng-model="member.lastname" type="text" id="lastname" ng-required="lastname">
         </div>
       </div>
+      <p class="error validationerror" ng-show="myform.lastname.$invalid && myform.lastname.$touched">
+      Last name required</p>
+
       <div class="form-group row">
-        <button type="submit" class="btn">Submit</button>
-        <!--<button type="submit" class="btn" ng-disabled="myform.$invalid">Submit</button>-->
+        <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+        <button type="submit" class="btn btn-primary" ng-disabled="myform.$invalid">Submit</button>
       </div>
     </form>
   </div>
