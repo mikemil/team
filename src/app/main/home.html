@@ -18,23 +18,57 @@
       <div class="form-group row">
         <label for="firstname" class="col-xs-2 col-form-label">First Name</label>
         <div class="col-xs-10">
-          <input class="form-control" ng-model="member.firstname" type="text" id="firstname" ng-required="firstname">
+          <input class="form-control" ng-model="member.firstName" type="text" id="firstName" ng-required="firstName">
         </div>
-        <p class="error validationerror" ng-show="myform.firstname.$invalid && myform.firstname.$touched">
+        <p class="error validationerror" ng-show="myform.firstName.$invalid && myform.firstName.$touched">
           First name required</p>
       </div>
       <div class="form-group row">
-        <label for="lastname" class="col-xs-2 col-form-label">Last Name</label>
+        <label for="lastName" class="col-xs-2 col-form-label">Last Name</label>
         <div class="col-xs-10">
-          <input class="form-control" ng-model="member.lastname" type="text" id="lastname" ng-required="lastname">
+          <input class="form-control" ng-model="member.lastName" type="text" id="lastName" ng-required="lastName">
         </div>
+        <p class="error validationerror" ng-show="myform.lastName.$invalid && myform.lastName.$touched">Last name required</p>
       </div>
-      <p class="error validationerror" ng-show="myform.lastname.$invalid && myform.lastname.$touched">
-      Last name required</p>
 
       <div class="form-group row">
-        <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+        <label for="addressLine1" class="col-xs-2 col-form-label">Address Line 1</label>
+        <div class="col-xs-10">
+          <input class="form-control" ng-model="member.addressLine1" type="text" id="addressLine1" ng-required="addressLine1">
+        </div>
+        <p class="error validationerror" ng-show="myform.addressLine1.$invalid && myform.addressLine1.$touched">Address required</p>
+      </div>
+      <div class="form-group row">
+        <label for="addressLine2" class="col-xs-2 col-form-label">Address Line 2</label>
+        <div class="col-xs-10">
+          <input class="form-control" ng-model="member.addressLine2" type="text" id="addressLine2">
+        </div>
+      </div>
+       <div class="form-group row">
+        <label for="city" class="col-xs-2 col-form-label">City</label>
+        <div class="col-xs-10">
+          <input class="form-control" ng-model="member.city" type="text" id="city" ng-required="city">
+        </div>
+        <p class="error validationerror" ng-show="myform.city.$invalid && myform.city.$touched">City required</p>
+      </div>
+       <div class="form-group row">
+        <label for="state" class="col-xs-2 col-form-label">State</label>
+        <div class="col-xs-10">
+          <input class="form-control" ng-model="member.state" type="text" id="state" ng-required="state">
+        </div>
+        <p class="error validationerror" ng-show="myform.state.$invalid && myform.state.$touched">State required</p>
+      </div>
+       <div class="form-group row">
+        <label for="zip" class="col-xs-2 col-form-label">Zip Code</label>
+        <div class="col-xs-10">
+          <input class="form-control" ng-model="member.zip" type="text" id="zip" ng-required="zip">
+        </div>
+        <p class="error validationerror" ng-show="myform.zip.$invalid && myform.zip.$touched">Zip  Code required</p>
+      </div>
+
+      <div class="form-group row">
         <button type="submit" class="btn btn-primary" ng-disabled="myform.$invalid">Submit</button>
+        <button type="button" class="btn btn-primary" ng-click="setShowAddFormFlag(false)">Cancel</button>
       </div>
     </form>
   </div>

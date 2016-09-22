@@ -9,10 +9,11 @@
   function HomeController($scope, homeService) {
     var home = this;
     home.showAddForm = false;
+    home.addResponse = null;
     home.members = null;
     home.member = {
-       'firstname': null,
-       'lastname': null
+       'firstName': null,
+       'lastName': null
     };
 
     homeService.getMembers().then(function (dataResponse) {
@@ -27,7 +28,15 @@
 
     $scope.submit = function() {
       console.log("submit called, f="+$scope.member.firstname);
+      homeService.addMember($scope.member).then(function(dataResponse) {
+        home.addResponse = dataResponse;
+      })
       $scope.showAddForm = false;
+    }
+
+    $scope.setShowAddFormFlag = function(flag) {
+      console.log('setting showAddForm flag to '+flag);
+       home.showAddForm = flag;
     }
 
   }
