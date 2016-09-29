@@ -17,7 +17,7 @@
     };
 
     homeService.getMembers().then(function (dataResponse) {
-      home.members = dataResponse;
+      home.members = dataResponse.data;
     })
 
     home.selectedMember = null;
@@ -26,18 +26,29 @@
         home.selectedMember = id;
     }
 
-    $scope.submit = function() {
-      console.log("submit called, f="+$scope.member.firstname);
+    home.submit = function() {
       homeService.addMember($scope.member).then(function(dataResponse) {
-        home.addResponse = dataResponse;
+        console.log('success')
+        home.members.push($scope.member);
+        home.resetForm();
       })
-      $scope.showAddForm = false;
+      home.showAddForm = false;
     }
 
-    $scope.setShowAddFormFlag = function(flag) {
-      console.log('setting showAddForm flag to '+flag);
+    home.setShowAddFormFlag = function(flag) {
+       console.log('setting showAddForm flag to '+flag);
        home.showAddForm = flag;
     }
+
+    home.resetForm = function () {
+      $scope.myform.$setPristine();
+    };
+
+
+    $scope.$watchCollection('home.members', function(newList, oldList) {
+      console.log('newList='+newList);
+      console.log('oldList='+oldList);
+    });
 
   }
 

@@ -22,6 +22,8 @@ Done - Made current date the defaultDate for the calendar
 **********************************************************************************************************
 TODO 
 **********************************************************************************************************
+fix page refresh issue after new member added
+
 Create form to allow add/edit of team members
   add more fields to the form
   create service entry to be used to call the post(create) of new master
