@@ -6,19 +6,28 @@
            Add Team Member
       </button>
     </span>
-    <div class="list-group">
-      <a class="list-group-item active">WOGA Level 4 Team</a>
-      <a class="list-group-item" ng-href="#details/{{member.id}}" ng-repeat="member in home.members">{{member.firstName}}</a> 
+    <div>
+      <ul class="list-group" ng-repeat="member in home.members">
+        <li class="list-group-item">
+           <a ng-href="#details/{{member.id}}">{{member.firstName}}</a>          
+           <button type="button" class="btn btn-primary" ng-click="home.deleteMember(member.id, $index)" style="float: right;" >Delete</button>
+        </li>
+      </ul>
+
+      <!--<a class="list-group-item active">WOGA Level 4 Team</a>-->
+      <!--<a class="list-group-item" ng-href="#details/{{member.id}}" ng-repeat="member in home.members">{{member.firstName}}
+         <button type="button" class="btn btn-primary" ng-click="home.deleteMember(member.id)">Delete</button>
+      </a>-->
     </div>
   </div>
 
   <!-- form to add member -->
   <div ng-show="home.showAddForm">
-    <form name="myform" ng-submit="home.submit()" novalidate> 
-      <div class="form-group row"> 
+    <form name="myform" ng-submit="home.submit()" novalidate>
+      <div class="form-group row">
         <label for="firstname" class="col-xs-2 col-form-label">First Name</label>
         <div class="col-xs-10">
-          <input class="form-control" name="firstName" ng-model="member.firstName" type="text" id="firstName" required>
+          <input class="form-control" name="firstName" ng-model="member.firstName" type="text" id="firstName" maxlength="20" size="30" required>
         </div>
         <p class="error validationerror" ng-show="myform.firstName.$invalid && myform.firstName.$touched">
           First name required</p>
@@ -26,7 +35,7 @@
       <div class="form-group row">
         <label for="lastName" class="col-xs-2 col-form-label">Last Name</label>
         <div class="col-xs-10">
-          <input class="form-control" name="lastName" ng-model="member.lastName" type="text" id="lastName" required>
+          <input class="form-control" name="lastName" ng-model="member.lastName" type="text" id="lastName" maxlength="20" size="30"  required>
         </div>
         <p class="error validationerror" ng-show="myform.lastName.$invalid && myform.lastName.$touched">Last name required</p>
       </div>
@@ -34,34 +43,34 @@
       <div class="form-group row">
         <label for="addressLine1" class="col-xs-2 col-form-label">Address Line 1</label>
         <div class="col-xs-10">
-          <input class="form-control" name="addressLine1" ng-model="member.addressLine1" type="text" id="addressLine1" required>
+          <input class="form-control" name="addressLine1" ng-model="member.addressLine1" type="text" id="addressLine1" maxlength="50" size="50" required>
         </div>
         <p class="error validationerror" ng-show="myform.addressLine1.$invalid && myform.addressLine1.$touched">Address required</p>
       </div>
       <div class="form-group row">
         <label for="addressLine2" class="col-xs-2 col-form-label">Address Line 2</label>
         <div class="col-xs-10">
-          <input class="form-control" name="addressLine2" ng-model="member.addressLine2" type="text" id="addressLine2">
+          <input class="form-control" name="addressLine2" ng-model="member.addressLine2" type="text" id="addressLine2" size="50"  maxlength="50">
         </div>
       </div>
        <div class="form-group row">
         <label for="city" class="col-xs-2 col-form-label">City</label>
         <div class="col-xs-10">
-          <input class="form-control" name="city" ng-model="member.city" type="text" id="city" required>
+          <input class="form-control" name="city" ng-model="member.city" type="text" id="city" maxlength="25" size="30"  required>
         </div>
         <p class="error validationerror" ng-show="myform.city.$invalid && myform.city.$touched">City required</p>
       </div>
        <div class="form-group row">
         <label for="state" class="col-xs-2 col-form-label">State</label>
         <div class="col-xs-10">
-          <input class="form-control" name="state" ng-model="member.state" type="text" id="state" required>
+          <input class="form-control" name="state" ng-model="member.state" type="text" id="state" maxlength="25" size="30" required>
         </div>
         <p class="error validationerror" ng-show="myform.state.$invalid && myform.state.$touched">State required</p>
       </div>
        <div class="form-group row">
         <label for="zip" class="col-xs-2 col-form-label">Zip Code</label>
         <div class="col-xs-10">
-          <input class="form-control" name="zip" ng-model="member.zip" type="text" id="zip" required>
+          <input class="form-control" name="zip" ng-model="member.zip" type="text" id="zip" size="10" required>
         </div>
         <p class="error validationerror" ng-show="myform.zip.$invalid && myform.zip.$touched">Zip  Code required</p>
       </div>

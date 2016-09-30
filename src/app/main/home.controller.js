@@ -42,12 +42,18 @@
 
     home.resetForm = function () {
       $scope.myform.$setPristine();
-    };
+    }
 
+    home.deleteMember = function(id, index) {
+      homeService.deleteMember(id).then(function (dataResponse) {
+        var deleted = home.members.splice(index, 1);
+        console.log('deleted: '+deleted);
+      })
+    }
 
     $scope.$watchCollection('home.members', function(newList, oldList) {
-      console.log('newList='+newList);
-      console.log('oldList='+oldList);
+      // console.log('newList='+newList);
+      // console.log('oldList='+oldList);
     });
 
   }

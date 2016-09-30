@@ -19,20 +19,20 @@ Done - Click on date without an event - defaults to add event  - prompt Done
 
 Done - Fix create of event - to add to the current calendar - currently have to refresh to see new event
 Done - Made current date the defaultDate for the calendar
+Done - fix page refresh issue after new member added: used $watchCollection
+Done - create service entry to be used to call the post(create) of new member
+Done - Fix detailsController to show details based on a single member and not
+          using the array of members - so the template also needs changes.
+
 **********************************************************************************************************
 TODO 
 **********************************************************************************************************
-fix page refresh issue after new member added
 
-Create form to allow add/edit of team members
-  add more fields to the form
-  create service entry to be used to call the post(create) of new master
-
-Fix detailsController to show details based on a single member and not
-  using the array of members - so the template also needs changes.
+Allow edit of team members
 
 
-Try adding a small X i in the corner of any calendar entry 
+
+Consider adding a small X in the corner of any calendar entry 
   - make it clickable and that X means to delete the calendar entry or some other way of deleting entries
     assuming you have the privileges
 

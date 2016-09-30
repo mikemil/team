@@ -16,6 +16,10 @@ angular.module('team').service('homeService', function ($http) {
      return $http.get('http://localhost:5000/members/'+memberId);
    }
 
+   svc.deleteMember = function(memberId) {
+     return $http.delete('http://localhost:5000/members/'+memberId);
+   }
+
 });
 
 })();
