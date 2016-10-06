@@ -28,16 +28,6 @@
       "dob": "08/19/2007"
     },
     {
-      "id": 3,
-      "firstName": "Brinley",
-      "lastName": "Whats-her-name",
-      "addressLine1": "3011 Plano Parkway",
-      "city": "Plano",
-      "state": "Texas",
-      "zip": "75066",
-      "dob": "12/12/2008"
-    },
-    {
       "id": 4,
       "firstName": "Madison",
       "lastName": "Kocian",
@@ -94,20 +84,24 @@
   "events": [
     {
       "id": 1,
+      "type": "Meet",
       "title": "Golden Grips Classic",
       "date": "2016-08-26"
     },
     {
+      "type": "Meet",
       "title": "Best Gymnastics Invite",
       "date": "2016-08-27",
       "id": 4
     },
     {
+      "type": "Meet",
       "title": "Denton Gymnastics Invite",
       "date": "2016-08-28",
       "id": 5
     },
     {
+      "type": "Meet",
       "title": "Texas Dreams Qualifier",
       "date": "2016-08-29",
       "id": 6
@@ -188,6 +182,7 @@
       "id": 27
     },
     {
+      "type": "Meet",
       "title": "Team Ice Cream Party",
       "date": "2016-09-15T05:00:00.000Z",
       "id": 28
@@ -208,6 +203,7 @@
       "id": 31
     },
     {
+      "type": "Meet",
       "title": "North Texas State Meeting levels3-5",
       "date": "2016-10-01T05:00:00.000Z",
       "id": 32
@@ -218,11 +214,12 @@
       "id": 33
     },
     {
-      "title": "XMAS - pratice 103pm",
+      "title": "XMAS - pratice 1-3pm",
       "date": "2016-12-25T06:00:00.000Z",
       "id": 34
     },
     {
+      "type": "Meet",
       "title": "level 8 qualifier",
       "date": "2016-09-17T05:00:00.000Z",
       "id": 35
@@ -251,6 +248,21 @@
       "title": "asdfasdfadsf",
       "date": "2016-09-28T05:00:00.000Z",
       "id": 40
+    },
+    {
+      "title": "practice 8a-10a",
+      "date": "2016-10-08T05:00:00.000Z",
+      "id": 41
+    },
+    {
+      "title": "North State meet",
+      "date": "2016-10-15T05:00:00.000Z",
+      "id": 42
+    },
+    {
+      "title": "Post Xmas practice",
+      "date": "2016-12-26T06:00:00.000Z",
+      "id": 43
     }
   ],
   "scores": [

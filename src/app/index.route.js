@@ -17,6 +17,11 @@
         controller: 'HomeController',
         controllerAs: 'home'
       })
+      .when('/events', {
+        templateUrl: 'app/main/events.html',
+        controller: 'EventsController',
+        controllerAs: 'events'
+      })
       .when('/about', {
         templateUrl: 'app/main/about.html',
         controller: 'AboutController',

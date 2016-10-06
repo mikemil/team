@@ -2,13 +2,13 @@
 
   <div ng-controller="EventsController">
 
-    <h2>Events</h2>
+    <h2>Meets</h2>
 
     <div class="list-group">
 
-      <a class="list-group-item active">WOGA Level 4 Team Schedule/Events</a>
+      <a class="list-group-item active">WOGA Level 4 Team Meets</a>
 
-      <a class="list-group-item"  ng-href="#events" ng-repeat="event in events.events">{{event.title}}</a>
+      <a class="list-group-item"  ng-href="#events" ng-repeat="event in events.meets">{{event.title}} - {{event.date | date:'yyyy-MM-dd'}}</a>
 
     </div>
   </div>
