@@ -43,7 +43,7 @@ Start looking at how to implement security
 Create controllers for each pages
 * details -  add service call to use $http with request parameter id
 * about  - should be minor - not much on that page
-* contact - should be minor - not mucn on that page either
+* contact - should be minor - not much on that page either
 
 May want to update the event service to take the month for the calendar 
   and then the service should only get events for that month.
