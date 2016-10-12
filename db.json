@@ -49,17 +49,6 @@
       "dob": "01/01/2001"
     },
     {
-      "id": 8,
-      "firstName": "Nastia",
-      "lastName": "Liukin",
-      "addressLine1": "1 Main Street",
-      "addressLine2": "Protege Suite",
-      "city": "Plano",
-      "state": "Texas",
-      "zip": "75024",
-      "dob": "06/11/2008"
-    },
-    {
       "firstName": "Elena",
       "lastName": "Miller",
       "addressLine1": "2713 River Bend Trail",
@@ -76,6 +65,15 @@
       "state": "Texas",
       "zip": 75024,
       "id": 10
+    },
+    {
+      "firstName": "Aly",
+      "lastName": "Raisman",
+      "addressLine1": "Bunker Hill Road",
+      "city": "Boston",
+      "state": "MA",
+      "zip": "089000",
+      "id": 11
     }
   ],
   "events": [

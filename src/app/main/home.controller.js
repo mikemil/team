@@ -9,6 +9,7 @@
   function HomeController($scope, homeService) {
     var home = this;
     home.showAddForm = false;
+    home.showAddScores = false;
     home.addResponse = null;
     home.members = null;
     home.member = {
@@ -35,9 +36,23 @@
       home.showAddForm = false;
     }
 
+    home.addMemberScores = function(memberId) {
+      // more to do here!!!
+      home.showAddScores = true;
+      home.showAddForm = false;
+    }
+
+    home.submitScores = function() {
+      home.showAddScores = false;
+    }
+
     home.setShowAddFormFlag = function(flag) {
-       console.log('setting showAddForm flag to '+flag);
        home.showAddForm = flag;
+    }
+
+    home.setShowAddScores = function(scoreFlag, addFormFlag) {
+       home.showAddScores = scoreFlag;
+       home.showAddForm = addFormFlag;
     }
 
     home.resetForm = function () {
@@ -52,8 +67,6 @@
     }
 
     $scope.$watchCollection('home.members', function(newList, oldList) {
-      // console.log('newList='+newList);
-      // console.log('oldList='+oldList);
     });
 
   }
