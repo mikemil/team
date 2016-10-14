@@ -29,7 +29,6 @@
 
     home.submit = function() {
       homeService.addMember($scope.member).then(function(dataResponse) {
-        console.log('success')
         home.members.push($scope.member);
         home.resetForm();
       })

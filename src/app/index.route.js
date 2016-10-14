@@ -17,10 +17,10 @@
         controller: 'HomeController',
         controllerAs: 'home'
       })
-      .when('/addscores', {
-        templateUrl: 'app/main/addscores.html',
-        controller: 'HomeController',
-        controllerAs: 'home'
+      .when('/scores/:id', {
+        templateUrl: 'app/main/viewscores.html',
+        controller: 'ScoresController',
+        controllerAs: 'scores'
       })
       .when('/events', {
         templateUrl: 'app/main/events.html',
