@@ -2,32 +2,35 @@
 
   <div ng-controller="ScoresController as scores">
 
-    <h2>Meet: {{scores.meet.name}}</h2>
+    <div ng-show="scores.meet.members">
 
-    <!--<div ng-show="scores.meet">-->
+        <h2>Meet: {{scores.meet.name}}</h2>
         <table class="table">
         <thead>
             <tr>
-                <th>#</th>
                 <th>Name</th>
                 <th>Bars</th>
                 <th>Beam</th>
                 <th>Floor</th>
                 <th>Vault</th>
+                <th>Total</th>
             </tr>
         </thead>
         <tbody>
             <tr ng-repeat="memberscores in scores.meet.members">
-                <th scope="row">{{memberscores.id}}</th>
-                <td>{{memberscores.name}}</td>
+                <td scope="row">{{memberscores.name}}</td>
                 <td>{{memberscores.bars}}</td>
                 <td>{{memberscores.beam}}</td>
                 <td>{{memberscores.floor}}</td>
                 <td>{{memberscores.vault}}</td>
+                <td >{{memberscores.bars+memberscores.beam+memberscores.floor+memberscores.vault}}</td>
             </tr>
         </tbody>
         </table>
-    <!--</div>-->
+    </div>
+    <div ng-show="!scores.meet">
+        <h3>No scores for this meet</h3>
+    </div>
   </div>
 
 </div>
